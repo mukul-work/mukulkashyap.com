@@ -229,17 +229,8 @@ strong {
   border-bottom: 1px solid var(--color-border);
 }
 
-.project:last-of-type {
-  border-bottom: none;
-}
-
 .project h2 {
   margin:0;
-}
-
-.project p {
-  margin-bottom: var(--space-sm);
-  /* color: var(--color-muted); */
 }
 
 .project ul {
