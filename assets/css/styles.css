@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body, h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
@@ -52,23 +56,24 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: var(--space-sm);
-  margin-top: var(--space-lg);
+  margin-bottom: 0;
 }
 
 p {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
   color: var(--color-text);
-  max-width: 60ch;
+  max-width: 80ch;
 }
 
 a {
   color: var(--color-text);
+  opacity: 0.7;
   text-decoration: none;
 }
 
 a:hover {
-  opacity: 0.7;
+  opacity: 1;
+  text-decoration: underline;
 }
 
 /* Layout Container */
@@ -87,6 +92,7 @@ a:hover {
 .hero {
   padding: var(--space-md) 0;
   border-bottom: 1px solid var(--color-border);
+
 }
 
 .hero-inner {
@@ -134,22 +140,24 @@ a:hover {
   opacity: 1;
 }
 
-.post-list li {
+/* .post-list li {
   margin-bottom: var(--space-md);
-}
+} */
 
 .meta {
   display: block;
   font-size: 0.85rem;
   color: var(--color-muted);
-  margin-top: var(--space-xs);
+  /* margin-top: var(--space-xs); */
 }
 
 /* Sections */
 
 .section {
   margin: 0;
-  padding: var(--space-xl);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+ 
 }
 
 /* Header / Navigation */
@@ -157,6 +165,7 @@ a:hover {
 nav {
   padding: var(--space-md) 0;
   border-bottom: 1px solid var(--color-border);
+
 }
 
 nav ul {
@@ -180,8 +189,30 @@ nav a:hover {
 /* Footer */
 
 footer {
-  padding: var(--space-md);
-  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+  /* border-top: 1px solid var(--color-border); */
   color: var(--color-muted);
   font-size: 0.9rem;
+
 }
+
+/* Experience Page */
+
+.experience-block ul {
+  margin-bottom: var(--space-md);
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.experience-block li {
+  margin-bottom: var(--space-xs);
+}
+
+.experience-block p + ul {
+  margin-top: var(--space-sm);
+}
+
+.experience-block strong {
+  font-weight: 600;
+}
+
