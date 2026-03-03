@@ -212,7 +212,47 @@ footer {
   margin-top: var(--space-sm);
 }
 
-.experience-block strong {
+strong {
   font-weight: 600;
 }
 
+
+/* Projects Page */
+
+.intro {
+  color: var(--color-muted);
+}
+
+.project {
+  margin: 0;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project:last-of-type {
+  border-bottom: none;
+}
+
+.project h2 {
+  margin:0;
+}
+
+.project p {
+  margin-bottom: var(--space-sm);
+  /* color: var(--color-muted); */
+}
+
+.project ul {
+  margin-bottom: var(--space-sm);
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.project li {
+  margin-bottom: 0.4rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
