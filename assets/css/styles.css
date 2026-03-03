@@ -82,7 +82,6 @@ a {
 
 a:hover {
   opacity: 1;
-  text-decoration: underline;
 }
 
 /* Layout Container */
@@ -181,10 +180,17 @@ nav a {
   color: var(--color-muted);
   text-decoration: none;
   letter-spacing: 0.02rem;
+  padding-bottom: 0.2rem;
 }
 
 nav a:hover {
   color: var(--color-text);
+}
+
+nav a.active {
+  color: var(--color-text);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-text);
 }
 
 /* Footer */
