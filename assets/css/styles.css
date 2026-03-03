@@ -10,7 +10,15 @@ html {
   overflow-y: scroll;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -29,8 +37,9 @@ ul {
   --color-border: #e5e5e5;
   --color-bg: #ffffff;
 
-  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-system:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -92,11 +101,10 @@ a:hover {
 .hero {
   padding: var(--space-md) 0;
   border-bottom: 1px solid var(--color-border);
-
 }
 
 .hero-inner {
-  display:flex;
+  display: flex;
   align-items: center;
   gap: var(--space-lg);
 }
@@ -140,15 +148,10 @@ a:hover {
   opacity: 1;
 }
 
-/* .post-list li {
-  margin-bottom: var(--space-md);
-} */
-
 .meta {
   display: block;
   font-size: 0.85rem;
   color: var(--color-muted);
-  /* margin-top: var(--space-xs); */
 }
 
 /* Sections */
@@ -157,7 +160,6 @@ a:hover {
   margin: 0;
   padding: var(--space-md) 0;
   border-bottom: 1px solid var(--color-border);
- 
 }
 
 /* Header / Navigation */
@@ -165,7 +167,6 @@ a:hover {
 nav {
   padding: var(--space-md) 0;
   border-bottom: 1px solid var(--color-border);
-
 }
 
 nav ul {
@@ -190,10 +191,8 @@ nav a:hover {
 
 footer {
   padding: var(--space-md) 0;
-  /* border-top: 1px solid var(--color-border); */
   color: var(--color-muted);
   font-size: 0.9rem;
-
 }
 
 /* Experience Page */
@@ -216,12 +215,7 @@ strong {
   font-weight: 600;
 }
 
-
 /* Projects Page */
-
-/* .intro {
-  color: var(--color-muted);
-} */
 
 .project {
   margin: 0;
@@ -230,7 +224,7 @@ strong {
 }
 
 .project h2 {
-  margin:0;
+  margin: 0;
 }
 
 .project ul {
