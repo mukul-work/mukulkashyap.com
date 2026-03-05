@@ -224,6 +224,15 @@ strong {
   font-weight: 600;
 }
 
+.experience-block p a {
+  text-decoration: underline;
+}
+
+.experience-block p strong {
+  color: var(--color-text);
+  margin-right: 6px;
+}
+
 /* Projects Page */
 
 .project {
