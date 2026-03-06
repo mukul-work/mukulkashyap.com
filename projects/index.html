@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Mukul Kashyap</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme) {
+        document.documentElement.classList.add(savedTheme);
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.add("light");
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -15,6 +26,9 @@
           <li><a href="/projects/" class="active">Projects</a></li>
           <li><a href="/experience/">Experience</a></li>
         </ul>
+        <div id="theme-toggle">
+          <img id="theme-icon" src="/assets/images/moon.png" alt="Dark Mode" />
+        </div>
       </nav>
 
       <main>
@@ -146,5 +160,6 @@
 
       <footer>© 2026 Mukul Kashyap. All rights reserved.</footer>
     </div>
+    <script src="../assets/js/main.js" defer></script>
   </body>
 </html>
