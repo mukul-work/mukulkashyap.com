@@ -324,6 +324,14 @@ strong {
 @media (max-width: 480px) {
   .hero-inner {
     flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .hero-content{
+    align-items: center;
+  }
+  .intro{
+    text-align: center;
   }
 }
 
@@ -331,6 +339,14 @@ strong {
 @media (max-width: 640px) {
   .hero-inner {
     flex-direction: column;
+    gap: var(--space-sm);
+  }
+  .hero-content{
+    align-items: center;
+  }
+
+  .intro{
+    text-align: center;
   }
 }
 
@@ -338,5 +354,12 @@ strong {
 @media (max-width: 768px) {
   .hero-inner {
     flex-direction: column;
+    gap: var(--space-sm);
+  }
+  .hero-content{
+    align-items: center;
+  }
+  .intro{
+    text-align: center;
   }
 }
