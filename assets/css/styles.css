@@ -318,3 +318,25 @@ strong {
   color: var(--color-text);
   margin-right: 6px;
 }
+
+
+/* Phones */
+@media (max-width: 480px) {
+  .hero-inner {
+    flex-direction: column;
+  }
+}
+
+/* Large phones */
+@media (max-width: 640px) {
+  .hero-inner {
+    flex-direction: column;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+  }
+}
